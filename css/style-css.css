@@ -43,7 +43,7 @@ body {
     color: var(--color-accent);
 }
 .stat-preview .info p {
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.9;
     max-width: 353px;
     margin-bottom: 70px;
@@ -81,7 +81,9 @@ body {
     background-image: url("../images/image-header-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 413px;
+    background-color: var(--color-accent);
+    background-blend-mode: multiply;
+    height: 414px;
     width: 500px;
 }
 @media (max-width: 767px) {
@@ -91,13 +93,4 @@ body {
         height: 28vh;
         background-size: cover;
     }
-}
-.stat-preview .img-stat::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: hsl(277deg 63% 30% / 67%);
 }
